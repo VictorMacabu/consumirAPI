@@ -1,3 +1,13 @@
 body{
+    text-align: center;
     background-color: #F2F2F2;
+}
+.container{
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
