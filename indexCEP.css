@@ -1,13 +1,25 @@
 body{
+    margin: 0;
     text-align: center;
     background-color: #F2F2F2;
 }
 .container{
     display: inline-block;
-    padding: 20px 60px;
+    padding: 40px 120px;
     background-color: #FFFFFF;
-    margin-top: 40px;
+    margin-top: 80px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+#recebe-cep,#busca-cep{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+#busca-cep{
+
+    border: none;
+    background-color: #444444;
+    color: #f1f1f1;
 }
