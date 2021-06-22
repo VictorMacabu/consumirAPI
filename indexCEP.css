@@ -52,19 +52,25 @@ form input[type=text]:focus{
 }
 @media screen and (max-width: 520px){
     .cRespostaCEP,.container{
-        width: 100%;
+        display: flex;
+        width: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .cRespostaCEP{
+        flex-direction: column;
     }
     .container{
-        display:flex;
-        
+        flex-direction: column;
+        align-items: center;
     }
     #recebe-cep{
-        width: 51%;
-        display:block;
+        display: flex;
+        align-content: center;
     }
     #busca-cep{
         margin-top: 5px;
-        width: 56%;
-        display:block;
+        padding-left: 30%;
+        padding-right: 30%;
     }
 }
