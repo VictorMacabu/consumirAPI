@@ -29,12 +29,42 @@ form input[type=text]:focus{
     background-color: #444444;
     color: #f1f1f1;
 }
-/* .respostaCEP{
+ .cRespostaCEP{
     display: inline-block;
+    text-align: left;
     margin-top: 10px;
     width: 450.45px;
     padding: 30px;
     background-color: #FFFFFF;
     border: 1px solid;
     border-color: #c4c4c4;
-}*/
+ }
+ .cRespostaCEP p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #666666;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+#cep,#estado,#logradouro,#cidade{
+    color: #7b7b7b;
+    font-weight: lighter;
+}
+@media screen and (max-width: 520px){
+    .cRespostaCEP,.container{
+        width: 100%;
+    }
+    .container{
+        display:flex;
+        
+    }
+    #recebe-cep{
+        width: 51%;
+        display:block;
+    }
+    #busca-cep{
+        margin-top: 5px;
+        width: 56%;
+        display:block;
+    }
+}
