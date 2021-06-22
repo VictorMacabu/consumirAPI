@@ -13,12 +13,15 @@
     <div class="container">
         <form>
             <input type="text" id="recebe-cep"  placeholder="00000-000" required >
-            <input type="submit" id="busca-cep" value="Buscar CEP">
+            <input type="button" id="busca-cep" value="Buscar CEP">
         </form>
     </div>
     <br>
-    <div class="respostaCEP">
-        
+    <div class="cRespostaCEP" id="iRespostaCEP" style="display: none;">
+        <p>CEP: <span id="cep"></span></p>
+        <p>Estado: <span id="estado"></span></p>
+        <p>Cidade: <span id="cidade"></span></p>
+        <p>Logradouro: <span id="logradouro"></span></p>
     </div>
 
     <script src="scriptCEP.js"></script>
