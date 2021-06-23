@@ -25,9 +25,11 @@
 
 # 💾 Clone este projeto
 ```Bash
-#Abra seu Terminal Git Bash e digite
+#Abra seu Terminal Git Bash e digite:
 
 $ git clone https://github.com/VictorMacabu/consumirAPI
+
+#Pressione Enter . Seu clone local será criado.
 ```
 # 🧛🏽‍♂️ Sobre o desenvolvedor
 
