@@ -1,15 +1,15 @@
 'use strict';
 const eNumero = (numero) => /^[0-9]+$/.test(numero);// .test verifica se o input é número 
 
-const cepValido = (cep) => cep.length == 8 && eNumero(cep); // verifica se o input tem 8 digitos
+const cepValido = (cep) => cep.length == 8 && eNumero(cep); // verifica se o input tem 8 digitos e se é numérico
 
 const buscarCep = async () => { //Requisita à API e trata o cep recebido  
     const cep = document.getElementById("recebe-cep").value;
-    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    const url = `http://viacep.com.br/ws/${cep}/json/`; //chama a API
     if (cepValido(cep)) { //verifica se cep pode ser valido
 
-        const dados = await fetch(url);
-        const valores = await dados.json();
+        const dados = await fetch(url); //atribui a arvore de retorno à dados
+        const valores = await dados.json();// extrai os valores do json de dados
 
         if (valores.hasOwnProperty('erro')) { //verifica se viacep retorna json com erro=true.
             document.getElementById('recebe-cep').value = 'CEP não encontrado!';
@@ -18,6 +18,7 @@ const buscarCep = async () => { //Requisita à API e trata o cep recebido
             document.getElementById("iRespostaCEP").style.display = "none"; //muda o estado do display do mostrador 
         } else {
             document.getElementById('recebe-cep').style.outlineColor = "#6aa4f8";
+            document.getElementById('recebe-cep').style.color = "black";
             atribuirValores(valores);
             document.getElementById("iRespostaCEP").style.display = ""; //muda o estado do display do mostrador 
         }
